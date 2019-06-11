@@ -1,0 +1,32 @@
+.dropdown.seat button.dropdown-toggle {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: 1px gray solid;
+  border-radius: 4px;
+  background: lightgray;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 0;
+
+  &.occupied {
+    background: red;
+    cursor: not-allowed;
+  }
+
+  &.selected {
+    background: greenyellow;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.seat-type-box {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+}
